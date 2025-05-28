@@ -99,6 +99,10 @@ def main():
     
     # 產生使用者網址列表
     generate_user_urls()
+
+    # UI - 使用者下拉選單
+    selected_user = st.sidebar.selectbox("請選擇使用者", user_ids)
+
     
     # 獲取網址參數中的使用者ID (已在頁面配置時獲取)
     if selected_user is None or selected_user == 'User':
